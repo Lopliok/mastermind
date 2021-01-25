@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ActionPanel from './components/ActionPanel';
+import RoundButton from './components/BoardElements/RoundButton';
+import GameBoard from './components/GameBoard';
+import styled from 'styled-components'
+import { StoreProvider } from './context/Store';
+import { store } from './context';
+import TestButton from './components/BoardElements/TestButton';
+import Result from './components/Result';
+import ColorPicker from './components/BoardElements/ColorPicker';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StoreProvider defaultValue={store}>
+
+      <div className="App">
+        <div>
+          <h2>Mastermind</h2>
+          {false && <Result />
+          }
+          <GameBoard />
+
+          <ActionPanel />
+
+          <TestButton />
+
+        </div>
+
+        <ColorPicker />
+
+      </div>
+    </StoreProvider>
   );
 }
 
