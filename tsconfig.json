@@ -19,11 +19,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "rules": {
-      "eqeqeq": "off",
-      "no-unused-vars": "off",
-      "exhaustive-deps": "off"
-    },
   },
   "include": [
     "src"

@@ -70,16 +70,17 @@ const Result = () => {
 
 
     return (
-        <Board>
-            {<div>
-                Result:
-            <Row>
-                    {colorFieldsKey?.map((col, i) => <>
-                        <BoardRound key={col} type="selector" selectedColor={result?.[col as any]} />
-                    </>)}
-                </Row>
-            </div>}
-        </Board>
+        /*   <Board>
+              {<div>
+                  Result:
+              <Row>
+                      {colorFieldsKey?.map((col, i) => <>
+                          <BoardRound key={col} type="selector" selectedColor={result?.[col as any]} />
+                      </>)}
+                  </Row>
+              </div>}
+          </Board> */
+        <></>
     );
 }
 

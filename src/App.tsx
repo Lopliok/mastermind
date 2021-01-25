@@ -17,8 +17,8 @@ function App() {
       <div className="App">
         <div>
           <h2>Mastermind</h2>
-          {false && <Result />
-          }
+          <Result />
+
           <GameBoard />
 
           <ActionPanel />
