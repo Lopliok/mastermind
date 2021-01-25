@@ -56,7 +56,7 @@ export interface IStoreContent {
 export type IStoreSet = <T, K extends keyof IStore>(key: K, value: T) => void
 
 export interface IStore extends IStoreContent {
-  set<T, K extends keyof IStore>(key: K, value: Partial<IStore[K]>): void
+  set<K extends keyof IStore>(key: K, value: Partial<IStore[K]>): void
 }
 
 export interface IContext {

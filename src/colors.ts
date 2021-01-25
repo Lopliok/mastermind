@@ -1,4 +1,3 @@
-import { ColonToken, EnumType } from "typescript";
 
 export enum COLORS {
     GREEN,
