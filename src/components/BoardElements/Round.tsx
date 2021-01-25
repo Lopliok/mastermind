@@ -7,7 +7,6 @@ import { COLORS, colorTranslations, translateEnum } from '../../colors';
 
 
 const Col = styled.div`
-    dborder: 1px solid grey;
     padding: 10px;
 `
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../colors';
-import { Stores, CurrentScore, Conformity } from '../../context';
+import { Conformity, Stores } from '../../context';
 import { useStoreContext } from '../../context/Store';
-import RoundButton from './RoundButton';
 
 const Container = styled.div`
  padding-top: 30px;
@@ -29,7 +28,6 @@ const TestButton = () => {
     const data = context[Stores.BOARDSTATE]?.data
     const currentScore = context[Stores.BOARDSTATE]?.currentScore
 
-    const activeCol = context[Stores.BOARDSTATE]?.activeCol
 
     const onClick = () => {
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components'
-import { Conformity, CurrentScore, CurrentScoreTable, Stores } from '../context';
+import styled, { css } from 'styled-components';
+import { Conformity, CurrentScore, Stores } from '../context';
 import { useStoreContext } from '../context/Store';
 import BoardRound from './BoardElements/Round';
 

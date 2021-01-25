@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import { Stores } from '../context';
 import { useStoreContext } from '../context/Store';
 import BoardRound from './BoardElements/Round';

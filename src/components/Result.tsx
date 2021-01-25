@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components'
-import { COLORS } from '../colors';
+import styled from 'styled-components';
 import { Stores } from '../context';
 import { useStoreContext } from '../context/Store';
 import { getRandomInt } from '../utils';

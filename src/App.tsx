@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
 import ActionPanel from './components/ActionPanel';
-import RoundButton from './components/BoardElements/RoundButton';
-import GameBoard from './components/GameBoard';
-import styled from 'styled-components'
-import { StoreProvider } from './context/Store';
-import { store } from './context';
-import TestButton from './components/BoardElements/TestButton';
-import Result from './components/Result';
 import ColorPicker from './components/BoardElements/ColorPicker';
+import TestButton from './components/BoardElements/TestButton';
+import GameBoard from './components/GameBoard';
+import Result from './components/Result';
+import { store } from './context';
+import { StoreProvider } from './context/Store';
 
 
 
